@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,48 +47,7 @@
         <button class="tablinks" onclick="openTab(event, 'about')">About</button>
         <button class="tablinks" onclick="openTab(event, 'media')">Media</button>
         <button class="tablinks" onclick="openTab(event, 'creators')">Creators</button>
-    </div>
-
-    <div id="home" class="tab-content active">
-        <h2>Home</h2>
-        <p>Welcome to the homepage.</p>
-    </div>
-
-    <div id="about" class="tab-content">
-        <h2>About</h2>
-        <p>Learn more about us.</p>
-    </div>
-
-    <div id="media" class="tab-content">
-        <h2>Media</h2>
-        <p>Explore our media gallery.</p>
-    </div>
-
-    <div id="creators" class="tab-content">
-        <h2>Creators</h2>
-        <p>Meet the creators behind this project.</p>
-    </div>
-
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-
-            // Hide all tab contents
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Remove the "active" class from all tabs
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the selected tab and mark the button as active
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+   
     </script>
 
 </body>
