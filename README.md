@@ -32,6 +32,8 @@
     > > > ...or with space between arrows.
 
 
+    ## Lists
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +48,7 @@
             overflow: hidden;
             background-color: #333;
         }
-        .tab button {
+        #Tab button...
             background-color: inherit;
             float: left;
             border: none;
@@ -56,23 +58,23 @@
             color: white;
             font-size: 17px;
         }
-        .tab button:hover {
+        #Tab button:hover...
             background-color: #575757;
         }
-        .tab button.active {
+        #Tab button.active...
             background-color: #04AA6D;
         }
-        .tab-content {
+        #Tab-content...
             display: none;
             padding: 20px;
             border-top: none;
         }
-        .tab-content.active {
+        #Tab-content.active...
             display: block;
         }
-    </style>
-</head>
-<body>
+    #style.
+#head.
+#body.
 
     <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'home')">Home</button>
@@ -80,7 +82,7 @@
         <button class="tablinks" onclick="openTab(event, 'media')">Media</button>
         <button class="tablinks" onclick="openTab(event, 'creators')">Creators</button>
    
-    </script>
+    #script.
 
-</body>
-</html>
+#body.
+#html.
