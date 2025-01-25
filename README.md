@@ -1,85 +1,110 @@
-    # h1 Heading
-    ## h2 Heading
-    ### h3 Heading
-    #### h4 Heading
-    ##### h5 Heading
-    ###### h6 Heading
-
-
-    ## Horizontal Rules
-
-    _
-
-
-    **Emphasis**
-
-    ##This is bold text##
-
-    _This is bold text_
-
-    *This is italic text*
-
-    _This is italic text_
-
-
-
-
-    ## Blockquotes
-
-
-    > Blockquotes can also be nested...
-    >> ...by using additional greater-than signs right next to each other...
-    > > > ...or with space between arrows.
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabbed Navigation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .tab {
-            overflow: hidden;
-            background-color: #333;
-        }
-        #Tab button...
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 20px;
-            color: white;
-            font-size: 17px;
-        }
-        #Tab button:hover...
-            background-color: #575757;
-        }
-        #Tab button.active...
-            background-color: #04AA6D;
-        }
-        #Tab-content...
-            display: none;
-            padding: 20px;
-            border-top: none;
-        }
-        #Tab-content.active...
-            display: block;
-        }
-    #style.
-#head.
-#body.
+    <title>White Paper Content</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="showContent('h1')">Show H1</button>
+        <button onclick="showContent('h2')">Show H2</button>
+        <button onclick="showContent('h3')">Show H3</button>
+        <button onclick="showContent('h4')">Show H4</button>
+        <button onclick="showContent('h5')">Show H5</button>
+        <button onclick="showContent('h6')">Show H6</button>
 
-    <div class="tab">
-        <button class="tablinks active" onclick="openTab(event, 'home')">Home</button>
-        <button class="tablinks" onclick="openTab(event, 'about')">About</button>
-        <button class="tablinks" onclick="openTab(event, 'media')">Media</button>
-        <button class="tablinks" onclick="openTab(event, 'creators')">Creators</button>
-   
-    #script.
+        <div id="content">
+            <h1 class="content-section"><b>Creator H1 Header</b></h1>
+            <h2 class="content-section"><b>H2 Header</b></h2>
+            <h3 class="content-section"><b>H3 Header</b></h3>
+            <h4 class="content-section"><b>H4 Hunter</b></h4>
+            <h5 class="content-section"><b>H5 Header</b></h5>
+            <h6 class="content-section"><b>H6 Header</b></h6>
+        </div>
+    </div>
 
-#body.
-#html.
+    <script>
+        function showContent(header) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.querySelector(header).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+styles.css
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.content-section {
+    display: none;
+    margin-top: 20px;
+    color: #333;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.content-section {
+    display: none;
+    margin-top: 20px;
+    color: #333;
+}
+
